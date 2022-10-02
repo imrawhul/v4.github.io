@@ -1,0 +1,179 @@
+$theme-clr: #103dcb;
+$v-sml: 0.5rem;
+$sml: 0.6rem;
+$med: 0.8rem;
+$large: 0.8rem;
+$extra-lrg: 1rem;
+$extra-lrg-pro: 1.1rem;
+$extra-lrg-pro-mx: 1.2rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+// ---------- Screen 1 ----------
+
+.logo-container {
+    text-decoration: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .logo-splash {
+        width: 4rem;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        font-size: 3rem;
+        color: #2a50a1;
+        letter-spacing: 3px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// ---------- Screen 2 ----------
+.bg-container {
+    background-color: $theme-clr;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    // ---------- Upper Part ----------
+    .upper-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        color: #fff;
+
+        .up1 {
+            display: flex;
+            opacity: 0.8;
+            font-size: $extra-lrg-pro-mx;
+        }
+        .up2 {
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+
+            .rfrsh-logo {
+                font-size: $extra-lrg-pro-mx;
+            }
+            .alltckts {
+                font-size: $large;
+                margin-left: 10px;
+            }
+        }
+        .up3 {
+            display: flex;
+            align-items: center;
+
+            .issuewthtckt {
+                font-size: $large;
+                margin-left: 10px;
+            }
+            .whtspp {
+                height: 24px;
+                width: auto;
+            }
+        }
+    }
+
+    // --------- Main container---------
+    .mn-container {
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+        height: 28rem;
+        width: 90vw;
+        padding: 1.1rem;
+        background-color: #fff;
+        box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.28);
+
+        .mc1 {
+            .mc__title {
+                font-size: $extra-lrg-pro;
+                text-align: center;
+                margin: 0.5rem 0 0.5rem 0;
+            }
+            .mc1-1 {
+                display: flex;
+                font-size: $extra-lrg-pro;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+            .mc1-line {
+                margin-top: 0.8rem;
+                border-bottom: 1px solid #000;
+            }
+        }
+        .mc2 {
+            .mc2__title {
+                margin-top: 0.8rem;
+                display: flex;
+                justify-content: space-between;
+                font-size: $large;
+            }
+            .mc2__data {
+                margin-top: 0.1rem;
+                display: flex;
+                justify-content: space-between;
+                font-size: $extra-lrg-pro;
+                .mc2-data-2nd {
+                    font-weight: bold;
+                }
+            }
+        }
+        .mc4 {
+            .ref__num {
+                font-size: $large;
+                padding: 1rem 0 1rem 0;
+                text-align: center;
+                padding: 1rem 0 1rem 0;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .qr__btn {
+                text-decoration: none;
+                button {
+                    display: flex;
+                    cursor: pointer;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    color: #fff;
+                    width: 81vw;
+                    font-size: $extra-lrg-pro;
+                    background-color: $theme-clr;
+                    height: 3.25rem;
+                    box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.28);
+                    // border-radius: 5px;
+                    // font-weight: bold;
+                }
+
+                .qr-btn-img {
+                    margin-right: 12px;
+                    height: 28px;
+                }
+            }
+            .tckt__status {
+                padding-top: 1rem;
+                font-size: $extra-lrg;
+            }
+        }
+    }
+}
